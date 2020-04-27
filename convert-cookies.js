@@ -14,7 +14,8 @@ if (!filename) {
 }
 
 const content = fs.readFileSync(filename, 'utf8');
-const cookies = content.split('\n');
+content.replace("Medium", "High")
+const cookies = content.split('High\t');
 
 console.log('# Netscape HTTP Cookie File');
 
